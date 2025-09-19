@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Page</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="themeToggle">Switch to Dark Mode</button>
+
+  <!-- Form Section -->
+  <form id="myForm">
+    <h2>Sign Up</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="email" id="email" placeholder="Enter your email">
+    <input type="password" id="password" placeholder="Enter password">
+    <input type="password" id="confirmPassword" placeholder="Confirm password">
+    <button type="submit">Submit</button>
+    <p id="errorMsg" style="color:red;"></p>
+    <p id="successMsg" style="color:green;"></p>
+  </form>
+
+  <!-- Interactive Toggle Text -->
+  <section id="interactive1">
+    <button id="toggleBtn">Show/Hide Text</button>
+    <p id="toggleText">Hello! I can be hidden or shown.</p>
+  </section>
+
+  <!-- Slider Section -->
+  <section id="interactive2">
+    <input type="range" id="fontSlider" min="10" max="50" value="20">
+    <p id="sliderText">Adjust my size!</p>
+  </section>
+
+  <!-- Counter Section -->
+  <section id="interactive3">
+    <h2>Counter Game</h2>
+    <button id="increaseBtn">Increase</button>
+    <button id="decreaseBtn">Decrease</button>
+    <p>Current Count: <span id="counter">0</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
